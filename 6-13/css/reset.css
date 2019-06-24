@@ -1,0 +1,30 @@
+/* @charset 'utf-8'; */
+/*重置样式reset.css 、基础样式base.css、公共样式common.css*/
+html{
+    font-size: 10px;
+}
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td,menu{margin:0;padding:0;color: #333;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:0 none;}
+em{font-style:normal;}  /* <em></em> */
+strong{font-weight:normal;}  /* <strong></strong> */
+table{border-collapse:collapse;border-spacing:0;}
+button,input[type="button"]{cursor:pointer;/*鼠标经过显示手型*/border:0 none;}
+a,button,input,img{-webkit-touch-callout:none;}
+/* 在iOS上，当你触摸并按住触摸的目标，比如一个链接，Safari浏览器将显示链接有关的系统默认菜单。这个属性可以让你禁用系统默认菜单。 */
+img{pointer-events:none;/*禁止图片的点击事件，例如长按保存图片*/display: block;}
+input,select,textarea{outline:none;}
+a{text-decoration:none;}
+.fl{ float: left}
+.fr{ float: right}
+.clear{clear:both;} 
+html,body{
+/*禁止用户选择元素*/
+-moz-user-select:none;
+ -webkit-user-select: none;
+-ms-user-select: none;
+ -khtml-user-select:none; 
+ /*禁止元素点击出现半透明黑色背景*/
+ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+html {height: 100%;width: 100%;font-family: 'Heiti SC', 'Microsoft YaHei';outline: 0;-webkit-text-size-adjust:none;}
+body {height: 100%;margin: 0;position: relative;}

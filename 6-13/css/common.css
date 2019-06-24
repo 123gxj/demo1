@@ -1,0 +1,257 @@
+/*每个页面公共的样式(头部+底部+头部下面的横幅)*/
+
+/* 页面整体容器 */
+body{
+    width: 1024px;
+    margin: auto;
+    background-color:rgba(247, 247, 247, 1);
+}
+.container{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+/* 登录注册按钮 */
+.login{
+    width: 10%;
+    float: right;
+    margin-right: 3%;
+    background-color: #ececec;
+    
+    
+}
+.login a{
+    font-size: 1.2rem;
+    color: #666666;
+}
+.login p a:first-child{
+    margin-left: 25%;
+    
+}
+.login p a:nth-child(2){
+    margin-left: 10%;
+}
+/* 头部 */
+.header{
+    overflow: hidden;
+    margin-top: 40px;
+}
+.header .logo{
+    width: 10%;
+    float: left;
+    margin-left: 2%;
+}
+.header .logo img{
+    width: 100%;
+}
+/*头部导航 */
+.header .nav{
+    width:55%;
+    float: right;
+    margin-right: 4%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header .nav>.nav-item{
+    position: relative;
+}
+.nav-active{
+    color: #0b7bc9!important;
+}
+.header .nav>.nav-item>a{
+    font-size: 1.4rem;
+    color: #646464;
+    font-weight:bold;
+}
+.header .nav>.nav-item>span{
+   
+    width: 1px;
+    height: 13px;
+    color: #d8d8d8;
+}
+.header .nav ul li a{
+    font-size: 1.2rem;
+}
+
+.header .nav .nav-item{
+   height: 40px;
+   width: auto;
+    position: relative;
+    
+}
+/* 头部子导航*/
+.header .nav ul{
+    width: 900%;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 25%;
+    position: absolute;
+    top: 20px;
+    left: -18px;
+    background-image: url(../images/subnav-bg.png);
+    background-repeat: repeat-x;
+    border-radius: 10px;
+    
+}
+.header .nav ul li{
+    float: left;
+    margin-right: 13%;
+    
+}
+.header .nav ul li:last-child{
+    margin-right: 0;
+}
+.header .nav ul li a{
+    color: #ffffff;
+}
+/*广告图 */
+.banner{
+    width: 100%;
+    margin-top:10px;
+}
+.banner img{
+    width: 100%;
+}
+/*内容 主体*/
+.content{
+    width: 100%;
+    margin-top: 14px;
+}
+.content>div{
+    float: left;
+}
+/* 内容主体-侧边导航*/
+.content .slide{
+    width: 20%;
+    margin-left:3%;
+    position: relative;
+}
+.content .slide .gouzi{
+    
+    height: 25%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    top:-25px;
+}
+.content .slide .product-show-bg{
+    width: 100%;
+    background:linear-gradient(#1647a1, #557fd0); 
+    overflow: hidden;
+    border-radius: 5%;
+}
+.content .slide .product-show{
+    width: 96%;
+    height: 96%;
+    margin: 2% auto;
+    border-radius: 4%;
+    background-color: white;
+    overflow: hidden;
+    
+}
+.content .product-show .title{
+    width: 90%;
+    height: auto;
+    margin: 50px 5% 0 5%;
+    border-bottom: none;
+
+}
+.content .product-show .title p:first-child{
+    font-size: 1.2rem;
+    color: #999999;
+    margin-left: 5px;
+}
+.content .product-show .title p:nth-child(2){
+    font-size: 2.4rem;
+    color: #000000;
+    margin-left: 5px;
+}
+.content .product-show ul{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    border-top: 3px solid #cccccc;
+}
+.content .product-show ul li{
+    margin-left: 5px;
+    position: relative;
+    line-height: 3em;
+    border-bottom: 1px solid #dbdbdb;
+    
+}
+.content .product-show ul li:last-child{
+    border-bottom: none;
+    margin-bottom: 10%;
+}
+
+.content .product-show ul li a{
+font-size: 1.2rem;
+    color: #333333;
+    margin-left: 20px;
+}
+.content .product-list li a::before{
+    content: "";
+    position: absolute;
+   
+    width: 9px;
+    height: 9px;
+     left: 5px;
+   top: 50%;
+   margin-top: -4.5px;
+    background-image: url(../images/list_ico.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 主体-内容部分*/
+.content .main-container{
+    width:77%;
+    
+}
+.content .main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 主体-内容部分-标题*/
+
+/* 页脚*/
+.footer{
+    width: 100%;
+    padding: 30px 0 17px;
+    position: relative;
+    background-image: url(../images/footer-bg.png);
+     background-repeat: repeat-x;
+     overflow: hidden;
+}
+.footer .content{
+    width:89.5%;
+    margin-left: 3%;
+    position: relative;
+}
+.footer p{
+    font-size:1.2rem;
+    color: #666666;
+}
+.footer .select{
+   position: absolute;
+   top: 0;
+   right: 0;
+    border: 1px solid #a9aaaf;
+    padding: 0 20px;
+    background: url(../images/sel_arrow.jpg) no-repeat 80px center;
+
+}
+
+
+.footer .select select{
+    border: 0;
+    background: none;
+    /*很关键：将默认的select选择框样式清除(默认箭头)*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+.footer .select select::-ms-expand { display: none; }

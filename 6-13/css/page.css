@@ -1,0 +1,463 @@
+/*每个页面不同的样式，或者命名为：style.css*/
+/* 1、首页 */
+
+/* 2、登录页 */
+
+/* 3、注册页 */
+
+/* 4、产品详细页 */
+.content .main .introduce{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.content .main .information{
+    padding: 5% 0;
+   
+     position: relative;
+}
+.content .information>img{
+    display: block;
+    float: left;
+    width: 60%;
+
+}
+.content .information ul{
+    width: 35%;
+    float: right;
+   overflow: hidden;
+}
+.content .information ul li{
+    border-bottom: 1px dashed #dbdbdb;
+  padding: 1em 0;
+  
+   position: relative;
+}
+.content .information ul li span{
+    display: block;
+    line-height: 2rem;
+}
+.content .information ul li span:first-child{
+    font-size: 1.2rem;
+   position: absolute;
+   
+}
+.content .information ul li span:nth-child(2){
+    font-size: 1.4rem;
+    color:#666666;
+    
+    margin-left:30%;
+}
+.content  .main .introduce .detail-img{
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* 主体-内容部分-其他产品*/
+.content  .main .other{
+    width: 100%;
+    margin: 5% 0;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: relative;
+}
+.content  .main .other .pre-arror{
+   position: absolute;
+  left: 5px;
+  top:50%;
+  margin-top: -20px;
+ 
+}
+.content  .main .other .next-arror{
+    position: absolute;
+  right: 5px;
+  top:50%;
+  margin-top: -20px;
+}
+.content  .main .other  .other-product{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content  .main .other  .other-product p:first-child{
+   height:90px;
+  position: relative;
+}
+.content  .main .other  .other-product p:first-child img{
+    position: absolute;
+    bottom: 0;
+
+}
+.content  .main .other  .other-product p:nth-child(2){
+    margin-bottom: 20px;
+}
+/* 主体-内容部分-产品性能*/
+.content  .main .detail{
+    width: 100%;
+    box-sizing: border-box;
+}
+.content  .main .detail .title{
+    width: 100%;
+    background: linear-gradient(#7095dd,#2f5aab);
+    border-radius:1.5em;
+    padding:1em 0 1em 0;
+    box-sizing: border-box;
+}
+.content  .main .detail .title span{
+    display: inline-block;
+    font-size:1.2rem;
+    margin-left: 1.5em;
+    padding:2px 2em;
+    color: #fefefe;
+    border-radius: 1.5em;
+    position: relative;
+    left: 0;
+    bottom: 0.5em;
+}
+.detail-active{
+    background-color: #ffffff;
+    color: #333333!important;
+    box-shadow: 0 2px 0 0 #dddddd inset;
+}
+.content  .main .detail .feature{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.content  .main .detail li{
+    border-bottom: 1px dotted #dbdbdb;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+}
+.content  .main .detail li:last-child{
+    border:none;
+}
+.content  .main .detail li .word{
+     margin-left: 10%;
+}
+.content  .main .detail li .word p:nth-child(1){
+    font-size:1.8rem;
+    color: #2665a8;
+}
+.content  .main .detail li .word p:nth-child(2){
+    font-size: 1.2rem;
+    color: #666666;
+   
+}
+/* 5、新闻列表页 */
+
+.content .title{
+    width: 100%;
+    height: 28px;
+    margin-bottom: 30px;
+   border-bottom: 1px solid #e5e5e5;
+
+}
+.content .title .name span:first-child{
+ font-size: 1.8rem;
+ color: #333333;
+ border-left: 3px solid #1647a1;
+ padding-left:7px;
+}
+.content .title .name span:nth-child(2){
+    font-size: 1.2rem;
+    color: #818181;
+    padding-left:7px;
+}
+.content .title .location a{
+    font-size: 1.2rem;
+    color: #999999;
+}
+.content .title .location a::after{
+    content: ">"
+}
+.content .title .location a:last-child::after{
+    content: none;
+}
+/* 主体-内容部分-新闻banner*/
+.content .new-banner{
+    width: 100%;
+    
+    margin-bottom: 20px;
+}
+.content .new-banner img{
+    display: block;
+    width: 100%;
+    
+}
+/* 主体-内容部分-新闻列表*/
+.content .main .new-list{
+    width: 100%;
+}
+.main .new-list ul{
+    width: 100%;
+    border-top:3px solid #1647a1;
+    box-sizing: border-box;
+}
+.main .new-list ul li{
+    box-sizing: border-box;
+   
+    padding: 1em 0;
+    border-bottom: 1px solid #e5e5e5;
+   
+}
+.main .new-list ul li:first-child{
+    border-top:2px solid #e5e5e5;
+    border-bottom: 2px solid #8aa3d0;
+}
+
+
+
+.main .new-list ul li span{
+    display: inline-block;
+    text-align: center;
+    font-size:1.2rem;
+    box-sizing: border-box;
+}
+.main .new-list ul li:first-child span{
+    border-right: 1px solid #8aa3d0;
+}
+.main .new-list ul li:first-child span:last-child{
+    border-right:none;
+}
+.main .new-list ul li .title{
+    height: auto;
+    text-align: left;
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* .content ul li span::after{
+   content: "|";
+   width: 1px;
+   height: 11px;
+   position:relative;
+  left:50%;
+} */
+.main .new-list ul li span:last-child{
+    border-left: none;
+}
+.main .new-list ul li span:first-child{
+    width: 10%;
+}
+.main .new-list ul li span:nth-child(2){
+    width: 40%;
+}
+.main .new-list ul li span:nth-child(3){
+    width: 15%;
+}
+.main .new-list ul li span:nth-child(4){
+    width: 20%;
+}
+.main .new-list ul li span:nth-child(5){
+    width: 12%;
+}
+/* 分页*/
+.main .new-list .paging{
+    width: 100%;
+    height: 12px;
+    text-align: center;
+    margin: 20px 0 30px 0;
+   
+}
+.main .new-list .paging a{
+    vertical-align: middle;
+}
+.main .new-list .paging .arror{
+    width: 13px;
+    height: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.main .new-list .paging .arror img{
+    display: block;
+    width: 100%;
+}
+.main .new-list .paging .page-num{
+    font-size:11px;
+    margin-bottom: 0.5px;
+    color: #666666;
+    margin: 0 4px;
+}
+.current-page{
+    color: #000000!important;
+    font-weight:bold;
+}
+/*搜索*/
+.main .search{
+    width: 100%;
+    background-color: #f3f3f3;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:5px 0;
+    margin-bottom: 80px;
+    display: flex;
+    clear: both;
+}
+.main .search>div{
+    margin-left: 7px;
+    box-sizing: border-box;
+   
+}
+.main .search .select {
+     position: relative;
+}
+.main .search .select select{
+     padding: 0 40px 0 0;
+     height: 21px;
+     text-align: left;
+}
+.main .search .select select option{
+    text-align: left;
+}
+.main .search .select::after{
+    content: "|";
+    height: 15px;
+    width: 1px;
+ position: absolute;
+ top: 2px;
+ right: 20px;;
+
+}
+.main .search select option{
+    text-align: left;
+}
+
+.main .search .input-text input{
+height: 21px;
+ box-sizing: border-box;
+}
+.main .search .search-button{
+    position: relative;
+}
+.main .search .search-button input{
+    border: 1px solid #cccccc;
+    border-radius:3px;
+    height: 21px;
+    background: white;
+    padding:2px 9px 3px 15px; 
+    line-height: 10px;
+}
+.main .search .search-button>img{
+     position: absolute;
+     top:8px;
+     left: 8px;
+
+}
+/******************************************************
+ 6、招聘页面 
+ ******************************************************/
+ /*  二级标题*/
+ .content .main .sectitle{
+     width: 100%;
+     height: auto;
+     margin: 28px 0 21px 0;
+     position: relative;
+ }
+ .main .sectitle .sect-name{
+     font-size:1.4rem;
+     color: #1647a1;
+     padding-left: 19px;
+     position: relative;
+   }
+   .main .sectitle .sect-name::before{
+       content: "";
+       width: 11px;
+       height: 11px;
+       position: absolute;
+       top: 4px;
+       left: 0px;
+       background: url(../images/recruit/sectitle-icon.png) no-repeat;
+   }
+   .main .sectitle .sect-content{
+       font-size:1.2rem;
+       color: #666666;
+       line-height: 2.5rem;
+   }
+   /*  目标工作*/
+   .content .main .aim-job{
+       width: 100%;
+       position: relative;
+   }
+   .main .job-left{
+       width:305px;
+       box-sizing: border-box;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       
+   }
+   .main .job-left .flex-item{
+       width: 145px;
+       height:125px;
+       box-sizing:border-box;
+       border: 8px solid #dadfe7;
+       position: relative;
+   }
+   .main .job-left .flex-item:first-child,
+   .main .job-left .flex-item:nth-child(2){
+        margin-bottom: 17px;
+   }
+   .main .job-left .flex-item .word{
+       width: 60%;
+       margin:12px 0 0 10px;
+   }
+   .main .job-left .flex-item .word p:first-child{
+       font-size:1.4rem;
+       
+   }
+   .main .job-left .flex-item .word p:last-child{
+       font-size:1.1rem;
+       color: #666666;
+   }
+   .main .job-left .flex-item>img{
+        display: block;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+   }
+   .main .job-right{
+       width: 45%;
+       box-shadow:border-box;
+       position: absolute;
+       bottom: 0;
+       right: 0;
+   }
+   .main .job-right img{
+       display: block;
+       width: 100%;
+   }
+   /*  录取程序*/
+   .content .main .procedure{
+       width: 100%;
+       height: 120px;
+       overflow: hidden;
+       position: relative;
+       display: flex;
+       justify-content: space-around;
+   }
+   .main .procedure .bg-line{
+       width: 90%;
+       height: 3px;
+       position: absolute;
+       top:50%;
+       margin-top:-1.3px;
+       left: 5%;
+       background-color: #e5e5e5; 
+       z-index: 0;
+   }
+   .main .procedure .circle{
+       z-index: 10;
+   }
+   /*  下载按钮*/
+   .content .main .download{
+       margin-bottom: 82px;
+   }
